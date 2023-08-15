@@ -16,7 +16,7 @@ int main(void)
 	while (i <= 9)
 	{
 		i2 = 0;
-		while (i2 < 9)
+		while (i2 <= 9)
 		{
 			if (i != i2 && i < i2)
 			{
