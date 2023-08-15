@@ -14,16 +14,16 @@ int main(void)
 	char a = 'a';
 	char A = 'A';
 
-	while (a < 'z')
+	while (a <= 'z')
 	{
 		putchar(a);
-		a++
+		a++;
 	}
 
-	while (A < 'Z')
+	while (A <= 'Z')
 	{
 		putchar(A);
-		A++
+		A++;
 	}
 
 	putchar('\n');
