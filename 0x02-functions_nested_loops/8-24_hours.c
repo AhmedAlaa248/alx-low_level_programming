@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * Description: A C program that prints every minute of the day of Jack Bauer

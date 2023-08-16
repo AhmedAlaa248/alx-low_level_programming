@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * Description: A C program that adds two integers and returns the result

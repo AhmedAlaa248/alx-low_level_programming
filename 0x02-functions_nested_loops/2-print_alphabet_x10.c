@@ -1,6 +1,6 @@
 
 
-#include <main.h>
+#include "main.h"
 
 /**
  * main - Entery point
@@ -20,8 +20,12 @@
 
 
 void print_alphabet(void)
+
 {
-	for (int i = 0; i < 10; i++)
+	
+
+	int i;
+	for (i = 0; i < 10; i++)
 	{
 		char ch = 'a';
 
