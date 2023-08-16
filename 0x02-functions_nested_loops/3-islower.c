@@ -1,12 +1,21 @@
 #include "main.h"
 
+
+
 /**
- * main - Entery point
+ *_islower  - function that prints the alphabet in lowercase
  *
- * Description: A C program that checks for lowercase character
-*
- * Return: Always 0 (Success)
+ * @c : checks input of function
+ *
+ *
+ *
+ * Return: returns 1 if 'c
+ *
 */
+
+
+
+
 
 
 int _islower(int c)
