@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * Description: A C program that adds two integers and returns the result
- * Return: Always n (Success)
+ *  add - a function  C program that adds two integers and returns the result
+ * @n : checks input of function
+ *
+ * @b : checks input of function
+ * Return: returns 1 if 'c'
 */
 
 int add(int n, int b)
