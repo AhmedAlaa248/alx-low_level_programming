@@ -1,12 +1,19 @@
 #include "main.h"
 
+
+
+
+
 /**
- * main - Entery point
+ * print_last_digit - function that prints the alphabet in lowercase
  *
- * Description: A C program that computes the absolute value of an integer.
-*
- * Return: Always n (Success)
+ * @n : checks input of function
+ *
+ * Return: returns 1 if 'c'
 */
+
+
+
 
 int print_last_digit(int n)
 {
