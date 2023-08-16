@@ -1,14 +1,20 @@
 #include "main.h"
 
+
+
+
+
+
+
+
 /**
- * main - Entery point
+ * print_sign - function that prints the alphabet in lowercase
  *
- * Description: A C program that prints the sign of a number
+ * @n : checks input of function
  *
- *
- *
- * Return: Always 0 (Success)
+ * Return: returns 1 if 'n'
 */
+
 
 
 int print_sign(int n)
