@@ -1,12 +1,20 @@
 #include "main.h"
 
+
+
+
+
+
+
+
 /**
- * main - Entery point
+ * _abs - function that prints the absoulute value
  *
- * Description: A C program that computes the absolute value of an integer.
-*
- * Return: Always n (Success)
+ * @n : checks input of function
+ *
+ * Return: returns 1 if 'c'
 */
+
 
 
 int _abs(int n)
