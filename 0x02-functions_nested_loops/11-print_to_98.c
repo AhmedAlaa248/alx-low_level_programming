@@ -1,10 +1,16 @@
 #include "main.h"
 
 /**
- * Description: A C program that prints all natural numbers
+ * print_to_98 - a function that prints all natural numbers
  * from n to 98, followed by a new line.
- * Return: Always n (Success)
+ *@n : check input
+ * Return: returns 1 if 'c'
 */
+
+
+
+
+
 
 void print_to_98(int n)
 {
