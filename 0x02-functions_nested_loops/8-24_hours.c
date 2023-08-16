@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Description: A C program that prints every minute of the day of Jack Bauer
+ *  jack_bauer - a functionprints every minute of the day of Jack Bauer
  * Return: Always n (Success)
 */
 
@@ -9,7 +9,7 @@ void jack_bauer(void)
 {
 
 	int min, hr;
-	
+
 	for (hr = 0; hr <= 23; hr++)
 	{
 		for (min = 0; min <= 59; min++)
