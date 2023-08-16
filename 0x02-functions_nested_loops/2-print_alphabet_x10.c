@@ -23,7 +23,7 @@
 
 
 /**
- * print_alphabet - function that prints the alphabet in lowercase 10times
+ * print_alphabet_x10 - function that prints the alphabet in lowercase 10times
  *
 */
 
@@ -37,7 +37,7 @@
 
 
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 
 {
 
