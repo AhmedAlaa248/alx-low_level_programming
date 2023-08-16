@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * main - Entery point
  *
- * Description: A C program that prints the alphabet in lowercase
-*
- * Return: Always 0 (Success)
+ *
+ *  print_alphabet - A C program that prints the alphabet in lowercase
+ *
+ * 
 */
 
 
