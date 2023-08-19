@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - function that prints the alphabet in lowercase
+ * print_diagonal - function that prints the alphabet in lowercase
  *
  * @n : checks the input
  *
@@ -15,7 +15,7 @@ void print_diagonal(int n)
 	if (n >= 0)
 		for (i = 0; i < n; i++)
 		{
-		_putchar('92');
+		_putchar(92);
 		if (i > 0)
 			_putchar('\n');
 			for (j = 0; j <= i; j++)
