@@ -19,5 +19,6 @@ void print_more_numbers(void)
 		}
 		_putchar('\n');
 	}
+	_putchar('\n');
 
 }
