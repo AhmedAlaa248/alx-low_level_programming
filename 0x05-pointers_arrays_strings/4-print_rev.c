@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  *  print_rev- change pointer value
@@ -10,6 +10,15 @@ include "main.h"
 
 void print_rev(char *s)
 {
-	
+	int count = 0;
+
+	while (s[count])
+		count++;
+
+	while (count)
+	{
+		_putchar(s[count])
+		count--;
+	}
 }
 
