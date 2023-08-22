@@ -21,3 +21,4 @@ int main (void)
 	}
 	putchar(2200 - sum);
 	return (0);
+}
