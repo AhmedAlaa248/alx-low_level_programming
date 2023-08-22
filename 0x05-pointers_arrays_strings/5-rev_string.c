@@ -15,14 +15,13 @@ void rev_string(char *s)
 	for (length = 0; *s != '\0'; length++)
 		;
 
-	char rev[length];
+	char rev;
 
-	for (i = 0; i < length; i++)
+	for (i = 0; i < length / 2; i++)
 	{
-		rev[i] = *s[length];
-		lecngth--;
+		rev = s[i];
+		s[i] = s[length - 1 - i];
+		s[length - 1 - i] = rev;
 	}
-
-	*s = rev;
 }
 
