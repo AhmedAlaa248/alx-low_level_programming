@@ -19,6 +19,6 @@ int main (void)
 		sum += z;
 		putchar(z);
 	}
-	putchar(2200 - sum);
+	putchar(2281 - sum);
 	return (0);
 }
