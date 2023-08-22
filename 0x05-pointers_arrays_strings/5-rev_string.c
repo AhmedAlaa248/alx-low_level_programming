@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  - change pointer value
+ * rev_string - change pointer value
  *
  * @s : char parameter
  *
@@ -10,6 +10,19 @@
 
 void rev_string(char *s)
 {
-	
+	int length, i;
+
+	for (length = 0; *s != '\0'; length++)
+		;
+
+	char rev[length];
+
+	for (i = 0; i < length; i++)
+	{
+		rev[i] = *s[length];
+		lecngth--;
+	}
+
+	*s = rev;
 }
 
