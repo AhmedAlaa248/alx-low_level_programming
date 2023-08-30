@@ -19,4 +19,5 @@ void print_chessboard(char (*a)[8])
 		_putchar(*a[iteration / 8][iteration - je]);
 	}
 	_putchar('\n');
+
 }
