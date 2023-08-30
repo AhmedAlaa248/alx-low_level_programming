@@ -12,13 +12,15 @@ void print_chessboard(char (*a)[8])
 {
 	unsigned int itr, j;
 
-	for (itr = 0; itr < 8; itr++)
+	for (itr = 0; itr < 64; itr++)
 	{
-		for (j = 0; j < 8; j++)
+		if (itr % 8 == 0; && itr != 0)
 		{
-			_putchar(*a[itr][j]);
+			j = itr;
+			_putchar('\n');
 		}
-	_putchar('\n');
+		_putchar(*a[itr / 8][itr - j]);
 	}
+	_putchar('\n');
 }
 
