@@ -28,8 +28,10 @@ int _sqrt_recursion(int n)
 int check_sqr(int n, int value)
 {
 	if (value * value == n)
-		return (val);
+		return (value);
 	else if (value * value < n)
 		return (check_sqr(n, value + 1));
+	else
+		return (-1);
 }
 
