@@ -1,18 +1,28 @@
 #include "main.h"
-
 /**
- *  - change pointer value
+ * _strcat - trings
+ * @dest: char parameter
+ * @src: char parameter
  *
- * @s : char parameter
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: void
+ */
 char *_strcat(char *dest, char *src)
 {
-	char c;
-	c = 'a';
+	int i, j;
 
-	return (c);
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
-
