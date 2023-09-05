@@ -1,54 +1,43 @@
-#include"main.h"
-
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
- *  _strlen - find a length of teh string
- * @s: string2
- * Return: int
-*/
-
-int _strlen(char *s)
-{
-	int size = 0;
-
-	for (; s[size] != '\0'; size++)
-		;
-
-	return (size);
-}
-
-/**
- *  *str_concat - a function that concatenates two strings.
- * @s1: string1
- * @s2: string2
- * Return: pointer
-*/
-
+ * str_concat - concatenates 2 strings
+ *
+ * @s1: first string
+ * @s2: string to add to end of of first string
+ *
+ * Return: pointer to newly allocated string concatenation
+ */
 char *str_concat(char *s1, char *s2)
 {
-	int size1, size2, i;
-	char *m;
+	unsigned int size1 = 0, size2 = 0;
+	char *ptr, *ret;
 
-	if (s1 == NULL)
-		s1 = "\0";
-	if (s2 == NULL)
-	{
-		s2 = "\0";
-		size1 = _strlen(s1);
-		size2 = _strlen(s2);
-		m = malloc((size1 + size2) * sizeof(char) + 1);
-	}
-	if (m == 0)
-		return (0);
+	ptr = s1;
+	if (s1)
+		while (*ptr++)
+			size1++;
+	else
+		s1 = "";
 
-	for (i = 0; i < size1 + size2; i++)
-	{
-		if (i < size1)
-			m[i] = s1[i];
-		else
-			m[i] = s2[i - size1];
-	}
+	ptr = s2;
+	if (s2)
+		while (*ptr++)
+			size2++;
+	else
+		s2 = "";
 
-	m[i] = '\0';
-	return (m);
+	ret = malloc(size1 + size2 + 1);
+	if (!ret)
+		return (NULL);
 
+	ptr = ret;
+	while (*s1)
+		*ptr++ = *s1++;
+	while (*s2)
+		*ptr++ = *s2++;
+	*ptr = 0;
+
+	return (ret);
 }
