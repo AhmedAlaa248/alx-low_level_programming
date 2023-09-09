@@ -1,19 +1,17 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * malloc_checked - change pointer value
- *
- * @b : int parameter
- *
- * Return: Always 0 (Success)
+ * *malloc_checked-  a function that allocates memory using malloc
+ * @b: arguments
+* Return: pointer to array initialized or NULL
 */
-
 void *malloc_checked(unsigned int b)
 {
-	void *z = malloc(b);
+	void *x;
 
-	if (z == 0)
+	x = malloc(b);
+
+	if (x == 0)
 		exit(98);
-
-	return (z);
+	return (x);
 }
