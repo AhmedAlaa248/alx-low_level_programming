@@ -9,25 +9,36 @@
  * Return: Always 0 (Success)
 */
 
-int main(int argc, char **argv)
+int main(int __attribute__((__unused__)) argc, char *argv)
 {
-	int (*opF)(int, int), a, b;
+	int number1, number2;
+	char *opF;
 
 	if (argc != 4)
-		printf("Error\n"), exit(98);
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
+	number1 = atoi(argv[1]);
+	number2 = atoi(argv[3]);
 
-	opF = get_op_func(argv[2]);
+	opF = argv[2];
 
-	if (!opF)
-		printf("Error\n"), exit(99);
+	if (get_op_func(opF) == NULL || opF[1] != '\0')
+	{
+		printf("Error\n")
+		exit(99);
+	}
 
-	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
-		printf("Error\n"), exit(100);
-
-	printf("%d\n", opF(a, b));
+	if ((*op == '/' && num2 == 0) ||
+		(*op == '%' && num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	
+	printf("%d\n",get_op_func(opF)(a, b));
 	return (0);
 }
 
