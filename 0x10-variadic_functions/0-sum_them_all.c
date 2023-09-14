@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
 */
 
-int sum_them_all(const unsigned int n, ...);
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list a;
 	unsigned int sum = 0;
