@@ -26,8 +26,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		case 1:
 			str = "(nil)";
 
-		printf("%s%s", separator, str);
+		if (i)
+			printf("%s%s", str, separator);
+		else
+			printf("%s", str);
 
 	}
+	printf("\n");
 	va_end(list);
 }
