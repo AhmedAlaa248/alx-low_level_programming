@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (i--)
 	{
-		char *str = va_arg(list, char *);
+		str = va_arg(list, char *);
 
 		switch ((int)(!str))
 		case 1:
