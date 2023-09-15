@@ -53,7 +53,7 @@ void format_string(char *separator, va_list list)
 
 	switch ((int)(!str))
 	case 1:
-		str = "(ni;)";
+		str = "(nil)";
 
 	printf("%s%s", separator, str);
 }
