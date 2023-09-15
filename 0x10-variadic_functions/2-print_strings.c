@@ -20,21 +20,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (i--)
 	{
-		str = va_arg(list, char *);
+		char *str = va_arg(list, char *);
 
-		if (str)
-		{
-			printf("%s", str);
-		}
-		else
-			printf("nil");
-		if (i)
-		{
-			if (separator)
-				printf("%s", separator);
-		}
-		else
-			printf("\n");
+		switch ((int)(!str))
+		case 1:
+			str = "(nil)";
+
+		printf("%s%s", separator, str);
+
 	}
 	va_end(list);
 }
