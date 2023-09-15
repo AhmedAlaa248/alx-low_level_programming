@@ -11,10 +11,10 @@
  * Return: Always 0 (Success)
 */
 
-int main(int __attribute__((__unused__)) argc, char *argv)
+int main(int int argc, char *argv[])
 {
 	int number1, number2;
-	char *opF;
+	int (*opF)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,25 +22,23 @@ int main(int __attribute__((__unused__)) argc, char *argv)
 		exit(98);
 	}
 
-	number1 = atoi(argv[1]);
-	number2 = atoi(argv[3]);
+	if (argv[2][1])
+	{
+		printf("Error\n")
+		exit(99);
+	}
+	opF = get_op_func(argv[2]);
 
-	opF = argv[2];
-
-	if (get_op_func(opF) == NULL || opF[1] != '\0')
+	if (opF == NULL)
 	{
 		printf("Error\n")
 		exit(99);
 	}
 
-	if ((*op == '/' && number2 == 0) ||
-		(*op == '%' && number2 == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	
-	printf("%d\n",get_op_func(opF)(number1, number2));
+	number1 = atoi(argv[1]);
+	number2 = atoi(argv[3]);
+
+	printf("%d\n", opF)(number1, number2));
 	return (0);
 }
 
