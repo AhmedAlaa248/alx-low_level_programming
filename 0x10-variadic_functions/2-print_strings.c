@@ -19,8 +19,22 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(list, n);
 
 	while (i--)
-		printf("%s%s", (str = va_arg(list, char*)) ? str : "(nil)",
-				i ? (separator ? separator : "") : "\n");
+	{
+		str = va_arg(list, char *);
 
+		if (str)
+		{
+			printf("%s", str);
+		}
+		else
+			printf("nil");
+		if (i)
+		{
+			if (separator)
+				printf("%s", separator);
+		}
+		else
+			printf("\n");
+	}
 	va_end(list);
 }
