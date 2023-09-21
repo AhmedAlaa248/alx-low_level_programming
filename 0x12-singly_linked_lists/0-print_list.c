@@ -1,25 +1,6 @@
 #include "lists.h"
 
 /**
- * _strlen - returns the lemgth of a string
- * @s: the string
- *
- * Return: integer length
-*/
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	if (!s)
-		return (0);
-
-	while (*s++)
-		i++;
-	return (i);
-}
-
-/**
  * print_list - change pointer value
  *
  * @h : counter parameter
@@ -33,7 +14,7 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		printf("[%d] %s\n", h->len, h->str ? h->str : "(nil)");
 		h = h->next;
 		i++;
 	}
